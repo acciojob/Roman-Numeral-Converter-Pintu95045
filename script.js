@@ -16,8 +16,8 @@ function convertToRoman(num) {
     const symbols =['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
 	
 		for(let i=0;i<values.length;i++){
-			if(num>=values[i]){
-				ana+=symbols[i];
+			while(num>=values[i]){
+				ans+=symbols[i];
 			}
 			num=num-values[i];
 		}
